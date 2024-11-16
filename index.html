@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie World</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&family=Righteous&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Login Page -->
+    <div id="login-page">
+        <h1>Welcome to <span>Movie World</span></h1>
+        <form id="login-form">
+            <input type="email" id="email" placeholder="Enter your email" required>
+            <input type="password" id="password" placeholder="Enter your password" required>
+            <button type="submit">Login</button>
+        </form>
+    </div>
+
+    <!-- Home Page -->
+    <div id="home-page" class="hidden">
+        <header>
+            <nav>
+                <ul class="navbar">
+                    <li><a href="#home" id="home-btn">Movies</a></li>
+                    <li><a href="#services" id="services-btn">Services</a></li>
+                    <li><a href="#contact" id="contact-btn">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+        <section id="movies" class="slider">
+            <h2>Featured Movies</h2>
+            <div class="slider-container">
+                <!-- Movie 1 -->
+                <div class="movie">
+                    <a href="https://drive.usercontent.google.com/download?id=1p4ozf79AgXaHuCm66dJ1ZucZFxgK5qY4&authuser=0" target="_blank">
+                        <img src="bad news.jpg" alt="Bad News">
+                    </a>
+                    <p>Bad News</p>
+                </div>
+
+                <!-- Movie 2 -->
+                <div class="movie">
+                    <a href="https://drive.usercontent.google.com/download?id=13q77JGULv0NACuxt9r1TK3AQ1vgdVVoQ&authuser=0" target="_blank">
+                        <img src="Deadpool_&_Wolverine_poster.jpg" alt="Deadpool & Wolverine">
+                    </a>
+                    <p>Deadpool & Wolverine</p>
+                </div>
+
+                <!-- Movie 3 -->
+                <div class="movie">
+                    <a href="https://drive.usercontent.google.com/download?id=123tFnLlkco2XsVlH0rAe0XHwWvhvY35W&authuser=0" target="_blank">
+                        <img src="baahubai 2.jpg" alt="Baahubali 2">
+                    </a>
+                    <p>Baahubali 2</p>
+                </div>
+            </div>
+        </section>
+        <section id="services" class="hidden">
+            <h2>Our Service</h2>
+            <p>We provide top-notch experiences with unlimited access to movies of only HD quality.</p>
+        </section>
+        <section id="contact" class="hidden">
+            <h2>Contact Us</h2>
+            <p>Email: support@movieworld.com</p>
+            <p>Phone: +124124124</p>
+        </section>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

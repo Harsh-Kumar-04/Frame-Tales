@@ -1,0 +1,173 @@
+/* General Styles */
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Login Page Styles */
+#login-page {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #e50914; /* Netflix red */
+    color: white;
+}
+
+#login-page h1 {
+    font-size: 4rem;
+    margin-bottom: 20px;
+    font-weight: 700;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+}
+
+#login-page span {
+    font-family: 'Righteous', sans-serif;
+    color: #f3f3f3;
+}
+
+/* Login Form Styling */
+#login-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.7); /* Darker semi-transparent background */
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+#login-form input, #login-form button {
+    margin: 15px 0;
+    padding: 12px 20px;
+    width: 300px;
+    border-radius: 10px;
+    border: none;
+    font-size: 1rem;
+}
+
+#login-form input {
+    background-color: #333;
+    color: white;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+#login-form button {
+    background-color: #f3f3f3;
+    color: #e50914;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#login-form button:hover {
+    background-color: #e50914;
+    color: white;
+}
+
+/* Home Page Styles */
+#home-page {
+    display: none;
+    padding: 20px;
+    background-color: #e50914; /* Red theme */
+    color: white;
+}
+
+#home-page h2 {
+    font-size: 2rem;
+    color: white;
+    margin-bottom: 20px;
+}
+
+/* Navbar Styles */
+.navbar {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    background-color: #333;
+    padding: 10px;
+}
+
+.navbar li {
+    margin: 0 15px;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+/* Slider Styles */
+.slider {
+    margin-top: 20px;
+}
+
+.slider-container {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+.movie {
+    position: relative;
+    transition: transform 0.3s ease;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.movie img {
+    width: 150px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.movie:hover img {
+    transform: scale(1.1); /* Zoom effect */
+}
+
+/* Pop-up Caption */
+.movie p {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white;
+    padding: 5px;
+    border-radius: 5px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.movie:hover p {
+    opacity: 1; /* Show caption on hover */
+}
+
+/* Service Section */
+section {
+    padding: 20px;
+}
+
+/* Add color to home page sections */
+#movies {
+    background-color: #1f1f1f;
+    color: white;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+#services, #contact {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 8px;
+}
