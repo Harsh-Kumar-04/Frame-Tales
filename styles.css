@@ -1,5 +1,6 @@
 /* General Styles */
-body, html {
+body,
+html {
     margin: 0;
     padding: 0;
     height: 100%;
@@ -13,7 +14,14 @@ body, html {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: #e50914; /* Netflix red */
+    background-image: url('back for login.jpg');
+    /* Fixed background image */
+    background-size: cover;
+    /* Ensure the image covers the page */
+    background-position: center;
+    /* Center the image */
+    background-attachment: fixed;
+    /* Keep the background fixed */
     color: white;
 }
 
@@ -35,13 +43,15 @@ body, html {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: rgba(0, 0, 0, 0.7); /* Darker semi-transparent background */
+    background-color: rgba(0, 0, 0, 0.7);
+    /* Darker semi-transparent background */
     padding: 30px;
     border-radius: 15px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
 }
 
-#login-form input, #login-form button {
+#login-form input,
+#login-form button {
     margin: 15px 0;
     padding: 12px 20px;
     width: 300px;
@@ -73,7 +83,14 @@ body, html {
 #home-page {
     display: none;
     padding: 20px;
-    background-color: #e50914; /* Red theme */
+    background-image: url('back for login.jpg');
+    /* Fixed background image */
+    background-size: cover;
+    /* Ensure the image covers the page */
+    background-position: center;
+    /* Center the image */
+    background-attachment: fixed;
+    /* Keep the background fixed */
     color: white;
 }
 
@@ -88,7 +105,7 @@ body, html {
     list-style-type: none;
     display: flex;
     justify-content: center;
-    background-color: #333;
+    background-color: #615757;
     padding: 10px;
 }
 
@@ -130,7 +147,8 @@ body, html {
 }
 
 .movie:hover img {
-    transform: scale(1.1); /* Zoom effect */
+    transform: scale(1.1);
+    /* Zoom effect */
 }
 
 /* Pop-up Caption */
@@ -148,7 +166,8 @@ body, html {
 }
 
 .movie:hover p {
-    opacity: 1; /* Show caption on hover */
+    opacity: 1;
+    /* Show caption on hover */
 }
 
 /* Service Section */
@@ -164,7 +183,8 @@ section {
     border-radius: 8px;
 }
 
-#services, #contact {
+#services,
+#contact {
     background-color: #333;
     color: white;
     padding: 20px;
