@@ -1,4 +1,4 @@
-document.getElementById('login-form').addEventListener('submit', function(event) {
+document.getElementById('login-form').addEventListener('submit', function (event) {
     event.preventDefault();
 
     // Hide the login page
@@ -15,4 +15,8 @@ document.getElementById('login-form').addEventListener('submit', function(event)
 
     // Set home page background color to match login red theme
     document.body.style.backgroundColor = '#e50914'; /* Red theme */
-}); 
+});
+
+
+
+
